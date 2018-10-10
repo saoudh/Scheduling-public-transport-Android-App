@@ -1,0 +1,65 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:actionBarTabBarStyle">@style/AppTabLayout</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/AppTheme.AutoCompleteTextView</item>
+
+        <!-- DopDownItem -->
+        <item name="android:dropDownListViewStyle">@style/AppTheme.DropDownListView</item>
+
+        <!-- ListPopupWindow -->
+        <item name="android:listPopupWindowStyle">@style/AppTheme.ListPopupWindow</item>
+    </style>
+
+
+    <style name="AppTheme.AutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <!-- DropDownItem -->
+    <style name="AppTheme.DropDownListView" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem
+        </item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:divider">@color/divider</item>
+    </style>
+
+    <!-- ListPopupWindow -->
+    <style name="AppTheme.ListPopupWindow" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:dropDownListViewStyle">@style/AppTheme.DropDownListView</item>
+    </style>
+
+    <style name="AppTheme.ListView" parent="Base.Widget.AppCompat.ListView">
+        <item name="android:divider">@color/divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="AppTheme.TextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Highlight" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

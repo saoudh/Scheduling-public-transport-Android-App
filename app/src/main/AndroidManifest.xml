@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.tudarmstadt.travelreminder">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <!-- The Google Maps API key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDBwwh2UZxcKzhPQrF7MUAJx8L3quLoh0w" />
+
+        <activity android:name=".main.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".main.UpdateService" />
+        <service android:name=".main.NotificationService" android:enabled="true"/>
+
+
+        <activity android:name="de.tudarmstadt.travelreminder.main.AndroidDatabaseManager" />
+        <receiver android:name=".main.TestReceiver" />
+    </application>
+
+</manifest>

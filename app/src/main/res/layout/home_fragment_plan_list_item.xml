@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/home_fragment_plan_list_item_mode"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_directions_bike_selected_24dp" />
+
+    <!-- Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="72dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+        <!-- Origin and arrival time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_fragment_plan_list_item_destination"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="Roboto"
+                android:lines="1"
+                android:text="Frankfurt am Main, Deutchland" />
+        </LinearLayout>
+
+        <!-- departure time with delay -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_fragment_plan_list_item_departure_time"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1pt"
+                android:fontFamily="Roboto"
+                android:text="14. Juli 12:30" />
+
+            <TextView
+                android:id="@+id/home_fragment_plan_list_item_delay"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1pt"
+                android:fontFamily="Roboto"
+                android:text="+30 Min"
+                android:textColor="@color/accent" />
+        </LinearLayout>
+
+        <!-- Origin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_fragment_plan_list_item_origin"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Ab Münster, Deutschland" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

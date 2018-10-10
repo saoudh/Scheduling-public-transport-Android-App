@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TravelReminder</string>
+    <string name="home_no_planes">No saved route plans.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="arrivalTime">Arrival time</string>
+    <string name="departure_time">Departure time</string>
+    <string name="travelMode">Travel mode</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="missing_origin">The origin location is missing.</string>
+    <string name="missing_destination">The destination location is missing.</string>
+    <string name="missing_arrival_time">The arrival time is missing.</string>
+    <string name="driving">By car</string>
+    <string name="bicycling">By bike</string>
+    <string name="walking">By walking</string>
+    <string name="transit">By transit</string>
+    <string name="unknown">Unknown</string>
+    <string name="time_to_departure">It is time to departure</string>
+</resources>

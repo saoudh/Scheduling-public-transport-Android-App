@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawer_open">Navigation geöffnet</string>
+    <string name="drawer_close">Navigation geschlossen</string>
+    <string name="home_no_planes">Keine gespeicherten Erinnerungen.</string>
+    <string name="origin">Von</string>
+    <string name="destination">Nach</string>
+    <string name="arrivalTime">Ankunftszeit</string>
+    <string name="departure_time">Abfahrtszeit</string>
+    <string name="travelMode">Reisemittel</string>
+    <string name="save">Speichern</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="missing_origin">Bitte geben sie den Startort ein.</string>
+    <string name="missing_destination">Bitte geben sie den Zielort ein.</string>
+    <string name="missing_arrival_time">Bitte geben sie den Ankuftszeitpunkt ein.</string>
+    <string name="driving">Mit dem Auto</string>
+    <string name="bicycling">Mit dem Fahrrad</string>
+    <string name="walking">Zufuß</string>
+    <string name="transit">Mit öffentlichen Verkehrsmitteln</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="time_to_departure">Es ist Zeit los zu fahren</string>
+</resources>

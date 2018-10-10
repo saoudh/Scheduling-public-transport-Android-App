@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "de.tudarmstadt.travelreminder"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+    }
+}
+
+dependencies {
+    // Local files
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // DataTypes
+    compile 'joda-time:joda-time:2.9.9'
+    // Services
+    compile 'com.google.maps:google-maps-services:0.1.20'
+    // Google Design
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.google.android.gms:play-services-location:11.0.2'
+    // Database
+    compile 'android.arch.persistence.room:runtime:1.0.0-alpha3'
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha3"
+    // LiveData
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha3'
+    // Testing
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+}
